@@ -1,0 +1,1 @@
+ansible all -i ./hosts -m command -a 'echo Hello World on Docker.'
