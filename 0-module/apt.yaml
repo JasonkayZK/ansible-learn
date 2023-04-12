@@ -1,0 +1,17 @@
+- name: apt module demo
+  hosts: all
+  tasks:
+    - name: Update repositories cache
+      become: true
+      apt:
+        update_cache: yes
+    - name: Install the package "vim"
+      become: true
+      apt:
+        name: vim
+        state: present
+    - name: Remove "nano" package
+      become: true
+      apt:
+        name: nano
+        state: absent
