@@ -1,4 +1,8 @@
-server1  ansible_ssh_host=127.0.0.1  ansible_ssh_port=49153
+server1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2221
+server2 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222
+server3 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2223
 
 [local]
 server1
+server2
+server3
